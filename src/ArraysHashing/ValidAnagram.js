@@ -25,4 +25,7 @@ function isAnagram(s, t) {
 
 let s = "racecar"
 let t = "carrace"
-console.log(isAnagram(s, t))
+console.log(isAnagram(s, t)) 
+
+
+
