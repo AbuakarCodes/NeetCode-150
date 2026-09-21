@@ -13,4 +13,4 @@ function hasDuplicate(nums) {
   }
   return false
 }
-console.log(hasDuplicate([1,2,3,4,45,5,5,6,6,6]));
+console.log(hasDuplicate([1,2,3,4,45,5,5,,6,6,6,]));
