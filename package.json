@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon  ./src/ArraysHashing/groupAnagrams.js"
+    "dev":"nodemon  ./src/ArraysHashing/topKFrequent.js"
   },
   "keywords": [],
   "author": "",
