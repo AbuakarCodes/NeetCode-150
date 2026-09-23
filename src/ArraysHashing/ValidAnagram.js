@@ -1,4 +1,4 @@
-function isAnagram(s, t) {
+export function isAnagram(s, t) {
   let hash_S = {}
   let hash_T = {}
 
@@ -24,7 +24,7 @@ function isAnagram(s, t) {
 }
 
 let s = "racecar"
-let t = "carrace"
+let t = "carraced"
 console.log(isAnagram(s, t)) 
 
 

@@ -8,3 +8,4 @@ function twoSum(nums, target) {
 }
 
 console.log(twoSum([2,3,5,6],5))
+
