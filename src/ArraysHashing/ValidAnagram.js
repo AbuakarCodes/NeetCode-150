@@ -23,11 +23,33 @@
 //   return true
 // }
 
+//  function isAnagram(s, t) {
+//   return s.split("").sort().join("") === t.split("").sort().join("")
+// }
+
 export function isAnagram(s, t) {
-  return s.split("").sort().join("") === t.split("").sort().join("")
+  if (typeof s != "string" || typeof t != "string") throw new Error("Argumrnt must be string")
+
+  if (s.length != t.length) return false
+
+  let decissionArray = new Array(26).fill(0)
+
+  let string1 = s.toLowerCase()
+  let string2 = t.toLowerCase()
+
+  for (let i = 0; i < s.length; i++) {
+    decissionArray[string1.charCodeAt(i) - 97]++
+    decissionArray[string2.charCodeAt(i) - 97]--
+  }
+
+  for (let i = 0; i < decissionArray.length; i++) {
+    if (decissionArray[i] !== 0) return false
+  }
+
+  return true
+
 }
 
 let s = "racecar"
-let t = "carraced"
+let t = "racecar"
 console.log(isAnagram(s, t))
-

@@ -23,5 +23,5 @@ function groupAnagrams(strs) {
 let strs = ["act","pots","tops","cat","stop","hat"]
 strs = ["HH","HH","HH"]
 
-console.log(groupAnagrams(strs))
+// console.log(groupAnagrams(strs))
 
