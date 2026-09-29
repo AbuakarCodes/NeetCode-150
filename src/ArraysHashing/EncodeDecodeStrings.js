@@ -45,4 +45,5 @@ let parasm = ["abuba#karabuba#kar", "world", ""]
 let encoded = a.encode(parasm)
 let decoded = a.decode(encoded)
 
-console.log({encoded,decoded})
+console.log({encoded,decoded}) 
+
