@@ -84,3 +84,7 @@ let nums = [1, 2, 4, 6]
 nums = [-1,0,1,2,3]
 
 console.log(ProductsofArrayExceptSelf(nums))
+
+
+[2,20,4,10,3,4,5] 
+[2,3,4,5,10,20]
