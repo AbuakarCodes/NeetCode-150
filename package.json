@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon  ./src/ArraysHashing/ProductsofArrayExceptSelf.js"
+    "dev":"nodemon  ./src/ArraysHashing/ValidSudoku.js"
   },
   "keywords": [],
   "author": "",
