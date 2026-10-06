@@ -10,24 +10,24 @@ let board = [
   [".", ".", ".", ".", "8", ".", ".", "7", "9"],
 ]
 
-
- board =
-[["1","2",".",".","3",".",".",".","."],
- ["4",".",".","5",".",".",".",".","."],
- [".","9","1",".",".",".",".",".","3"],
- ["5",".",".",".","6",".",".",".","4"],
- [".",".",".","8",".","3",".",".","5"],
- ["7",".",".",".","2",".",".",".","6"],
- [".",".",".",".",".",".","2",".","."],
- [".",".",".","4","1","9",".",".","8"],
- [".",".",".",".","8",".",".","7","9"]]
+board = [
+  ["1", "2", ".", ".", "3", ".", ".", ".", "."],
+  ["4", ".", ".", "5", ".", ".", ".", ".", "."],
+  [".", "9", "1", ".", ".", ".", ".", ".", "3"],
+  ["5", ".", ".", ".", "6", ".", ".", ".", "4"],
+  [".", ".", ".", "8", ".", "3", ".", ".", "5"],
+  ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+  [".", ".", ".", ".", ".", ".", "2", ".", "."],
+  [".", ".", ".", "4", "1", "9", ".", ".", "8"],
+  [".", ".", ".", ".", "8", ".", ".", "7", "9"],
+]
 
 function isValidSudoku(board) {
   if (!isRowValid(board)) return false
   else if (!isColunmValid(board)) return false
   else if (!isEachBoxValid(board)) return false
   else return true
-} 
+}
 
 function isRowValid(board) {
   for (let r = 0; r < board.length; r++) {
@@ -50,7 +50,6 @@ function isColunmValid(board) {
 }
 
 function isEachBoxValid(board) {
-//   const subGrids = []
   for (let row = 0; row < 9; row += 3) {
     for (let col = 0; col < 9; col += 3) {
       const subGrid = []
@@ -63,19 +62,11 @@ function isEachBoxValid(board) {
         }
         if (currentRow.length > 0) subGrid.push(currentRow)
       }
-
-      //   checking the subGrid on spot
-       if (!isValidGroup(subGrid.flat())) return false
-
-    //   if (subGrid.length > 0) subGrids.push(subGrid)
+      if (!isValidGroup(subGrid.flat())) return false
     }
   }
 
-//   for (let i = 0; i < subGrids.length; i++) {
-//     console.log(subGrids[i].flat())
-//   }
   return true
-  
 }
 
 function isValidGroup(group) {
@@ -84,7 +75,4 @@ function isValidGroup(group) {
   return hasNoDuplicate && isValidNumber
 }
 
-// console.log(isColunmValid(board))
-// console.log(isRowValid(board))
-// console.log(isEachBoxValid(board))
 console.log(isValidSudoku(board))
