@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon  ./src/ArraysHashing/ValidSudoku.js"
+    "dev":"nodemon  ./src/TwoPointers/maxWater.js"
   },
   "keywords": [],
   "author": "",
