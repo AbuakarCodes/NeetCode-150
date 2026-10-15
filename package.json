@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon  ./src/slidingWindow/maxProfit.js"
+    "dev":"nodemon  ./src/slidingWindow/LongestSubstring.js"
   },
   "keywords": [],
   "author": "",
